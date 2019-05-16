@@ -1,0 +1,20 @@
+---
+
+- name: Configure Kernel Previous Install Nix
+  become: true
+  shell: sysctl kernel.unprivileged_userns_clone=1
+
+- name: Download Nix Package Manager Installer
+  get_url:
+    url: https://nixos.org/nix/install
+    dest: /home/admin/install-nix-2.2.2
+    mode: 0755
+
+- name: Install Nix Package Manager
+  shell: sh /home/admin/install-nix-2.2.2
+
+- name: Remove Nix Installer
+  file:
+    state: absent
+    path: /home/admin/install-nix-2.2.2
+

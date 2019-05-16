@@ -1,0 +1,6 @@
+---
+ - name: Install Nix Package Manager
+   hosts: all
+   roles:
+     - role: nix
+    
