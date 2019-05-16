@@ -1,0 +1,10 @@
+---
+sb_debian_base_app_name: nicko
+sb_debian_base_deploy_user: '{{ sb_debian_base_app_name }}'
+sb_debian_base_deploy_user_group: '{{ sb_debian_base_app_name }}'
+sb_debian_base_firewall: no
+domain_name: '{{ hostname }}'
+ports:
+  - 22
+  - 80
+  - 443

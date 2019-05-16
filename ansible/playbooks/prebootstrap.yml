@@ -1,0 +1,7 @@
+---
+- name: Prebootstrap tasks
+  hosts: all
+  remote_user: root
+  roles:
+    - role: sb-debian-base
+      prebootstrap: yes

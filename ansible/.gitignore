@@ -1,0 +1,6 @@
+*~
+\#*\#
+external-roles/
+.vagrant/
+vault_password
+vault_password_becoin

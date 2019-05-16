@@ -1,0 +1,4 @@
+---
+
+- src: https://github.com/stackbuilders/sb-debian-base.git
+  version: v1.5.1

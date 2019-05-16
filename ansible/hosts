@@ -1,0 +1,3 @@
+[nix]
+nix01 ansible_host=nix.ansidock.com
+

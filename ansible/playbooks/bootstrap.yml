@@ -1,0 +1,8 @@
+---
+ - name: Bootstrap tasks
+   hosts: all
+   roles:
+     - role: sb-debian-base
+       bootstrap: yes
+       add_remove_keys: yes
+
