@@ -1,0 +1,11 @@
+---
+
+users:
+  - user: root
+    bashrc_path: "/root/.bashrc"
+
+  - user: "{{ sb_debian_base_admin_user }}"
+    bashrc_path: "/home/{{ sb_debian_base_admin_user }}/.bashrc"
+
+  - user: "{{ sb_debian_base_deploy_user }}"
+    bashrc_path: "/home/{{ sb_debian_base_deploy_user }}/.bashrc"

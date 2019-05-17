@@ -5,5 +5,7 @@
      - role: sb-debian-base
        bootstrap: yes
        add_remove_keys: yes
+     - role: bashrc
+       tags: bashrc
      - role: lynis
        tags: lynis

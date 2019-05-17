@@ -1,0 +1,11 @@
+---
+
+- name: Configure bashrc
+  become: true
+  template:
+    src: "bashrc.j2"
+    dest: "{{ item.bashrc_path }}"
+    owner: "{{ item.user }}"
+    group: "{{ item.user }}"
+    mode: 0644
+  with_items: "{{ users }}"
