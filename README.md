@@ -1,2 +1,2 @@
-# nix-ansidock
-This is a repo to provision a server with Nix Package Manager
+# OWASP - Ansible
+This is a repo to provision a server with Ansible from scratch.
