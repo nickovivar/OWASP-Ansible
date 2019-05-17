@@ -5,5 +5,7 @@
   remote_user: root
 
   tasks:
+    - name: Configure CloudCone Monitoring
+      shell: wget -N web.cloudc.one/sh/stats/install && bash install mWyI1oXJRErCNpLpi8dW2ldAFPiRgykDvSmwhkg8YHLM7xbpFplIKzipoBhE9BiE
     - name: Configure root ssh key
       shell: curl -o cc-ikey -L web.cloudc.one/sh/key && sh cc-ikey j50G3RHZA5gO
