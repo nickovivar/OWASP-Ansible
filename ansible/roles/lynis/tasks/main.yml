@@ -1,5 +1,0 @@
----
-
-- name: "Lynis report"
-  become: true
-  shell: /usr/sbin/lynis audit system > /home/admin/lynis_report.log
